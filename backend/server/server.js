@@ -26,11 +26,15 @@ const limiter = rateLimit({
 });
 app.use(limiter)
 
-app.use("/api",  createProxyMiddleware({
-    target: "http://localhost:5000",
+app.use(
+  "/api",
+  createProxyMiddleware({
+    target: "http:/localhost:5000",
     changeOrigin: true,
     logLevel: "warn",
-}));
+    pathRewrite: { "^/api": "" }
+  })
+);
 
 //Server
 app.use(  express.static(path.join(__dirname, "..", "..", "frontend", "dist"), {

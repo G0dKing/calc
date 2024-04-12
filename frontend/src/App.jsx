@@ -7,7 +7,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const calculate = async () => {
-    if (!expression.trim()) return; // Prevent calculation if the input is empty
+    if (!expression.trim()) return;
 
     setLoading(true);
     try {
