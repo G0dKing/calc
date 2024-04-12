@@ -2,6 +2,8 @@
 
 # <i>"Not Just Another Bitch-Ass Calculator"</i>
 
+### VITE | REACT.JS | NODE.JS | EXPRESS.JS | PYTHON 3 | FLASK | GUNICORN | NGINX
+
 # **Project Overview**
 
 **Description:** A full-stack calculator web application using Flask for backend API logic, React with Vite for the frontend, and Node.js+Express for middleware handling, and NGINX for serving and proxying requests in production.
