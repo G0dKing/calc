@@ -1,0 +1,11 @@
+node_modules
+package-lock.json
+scripts/*
+.env
+frontend/dist
+frontend/node_modules
+frontend/package-lock.json
+backend/api/__pycache__
+backend/nginx
+backend/server/node_modules
+backend/server/package-lock.json
