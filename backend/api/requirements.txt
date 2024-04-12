@@ -1,0 +1,5 @@
+Flask>=2.0.1
+gunicorn>=20.0.4
+requests>=2.31.0
+virtualenv>=20.25.1
+numpy>=1.26.4

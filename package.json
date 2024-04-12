@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start-api": "cd backend/api && flask run",
+    "start-client": "cd frontend && npm start",
+    "start-server": "cd backend/server && node server.js",
+    "deploy": "node scripts/deploy.js"
+  }
+
+}
