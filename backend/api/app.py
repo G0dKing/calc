@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/api/calculate', methods=['POST'])
+@app.route('/api/app', methods=['POST'])
 def calculate():
     data = request.json
     try:
@@ -16,4 +16,4 @@ def calculate():
     return jsonify(result=result)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)), debug=False)
+    app.run(host='0.0.0.0', port=5000)

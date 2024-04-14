@@ -11,11 +11,11 @@ function App() {
 
     setLoading(true);
     try {
-      const response = await axios.post("/api/calculate", { expression });
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/app`, { expression });
       setResult(response.data.result);
     } catch (error) {
-      setResult("Error: " + (error.response?.data?.result || "Server error"));
-      console.error("Calculation error:", error.message);
+      setResult("Error: " + (error.response?.data?.result || "Server Error"));
+      console.error("Error:", error.message);
     } finally {
       setLoading(false);
     }
